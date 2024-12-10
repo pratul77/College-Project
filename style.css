@@ -1,0 +1,176 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #eef2f3;
+    color: #333;
+}
+
+/* Header Styles */
+.header {
+    background: linear-gradient(135deg, #0073e6, #003d99);
+    text-align: center;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.header-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header-subtitle {
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+/* Main Section */
+.main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-box {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #0073e6;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+}
+
+.search-button {
+    background: #0073e6;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.search-button:hover {
+    background: #005bb5;
+}
+
+/* Weather Section */
+.weather-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.current-weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather-info {
+    font-size: 1rem;
+}
+
+.weather-alert {
+    font-size: 1rem;
+    font-weight: bold;
+    color: red;
+}
+
+/* Forecast Section */
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.forecast-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forecast-item h4 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+/* Map Section */
+.map-section {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#mapContainer {
+    height: 400px;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.map-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.map-button {
+    padding: 10px 20px;
+    border: none;
+    background: #0073e6;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.map-button:hover {
+    background: #005bb5;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background: #0073e6;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+}
