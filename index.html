@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherWise 20</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Leaflet.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">WeatherWise 20</h1>
+        <p class="header-subtitle">Your ultimate 20-day weather forecasting system</p>
+    </header>
+    
+    <main class="main">
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-box">
+                <input type="text" id="locationInput" class="search-input" placeholder="Search for a city..." />
+                <button id="searchButton" class="search-button">Search</button>
+            </div>
+        </section>
+
+        <!-- Current Weather Section -->
+        <section id="currentWeather" class="weather-section">
+            <h2 class="section-title">Current Weather</h2>
+            <div class="current-weather">
+                <div class="weather-info">
+                    <p id="cityName" class="weather-city">City: -</p>
+                    <p id="temperature" class="weather-temp">Temperature: -</p>
+                    <p id="condition" class="weather-condition">Condition: -</p>
+                </div>
+                <div id="alertMessage" class="weather-alert"></div>
+            </div>
+        </section>
+
+        <!-- Forecast Section -->
+        <section id="forecast" class="weather-section">
+            <h2 class="section-title">20-Day Forecast</h2>
+            <div id="forecastContainer" class="forecast-grid"></div>
+        </section>
+
+        <!-- Interactive Weather Map -->
+        <section id="map" class="map-section">
+            <h2 class="section-title">Interactive Weather Map</h2>
+            <div id="mapContainer"></div>
+            <div class="map-controls">
+                <button onclick="changeLayer('temp_new')" class="map-button">Temperature</button>
+                <button onclick="changeLayer('precipitation_new')" class="map-button">Precipitation</button>
+                <button onclick="changeLayer('clouds_new')" class="map-button">Clouds</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p class="footer-text">© 2024 WeatherWise 20. All rights reserved.</p>
+    </footer>
+    
+    <!-- Leaflet.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
